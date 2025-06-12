@@ -1,0 +1,39 @@
+<body>
+
+<div id="app"></div>
+
+<script type="text/babel">
+
+function Formulario ({ texto }) {
+
+return (
+
+<div>
+
+<h1>{ texto }</h1>
+
+<form method="POST">
+
+<input placeholder="Digite seu nome" />
+
+<button type="submit">Enviar</button>
+
+</form>
+
+</div>
+
+)
+
+}
+
+ReactDOM.render(
+
+<Formulario texto "Qual seu nome?" />,
+
+document.querySelector('#app')
+
+);
+
+</script>
+
+</body>
